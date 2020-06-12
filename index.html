@@ -8,6 +8,14 @@
 			#electro {width : 100px; height: 100px;}
 			hr {width : 850px;}
 			ol {font-size : 15pt;}
+			nav {display:block; margin-right:10%; float:right; border:solid; border-width:thin;  border-radius:10%}
+			nav a, p{display:block; padding:2px; text-align:center;}
+			article {
+					display:block; width:800px; margin-left: 29%;
+					border:solid medium navy; border-bottom-right-radius:10%; border-top-left-radius:10%
+					}
+			#logo {z-index:1; position:absolute; opacity:15%; top:20%; right:45%;}
+			#con {z-index:2;}
 		</style>
 	</head>
 	<body>
@@ -16,8 +24,15 @@
 		<hr>
 	</header>
 	<nav>
+		<p align="center">자주 보는 사이트</p>
+		<a href="https://www.letuin.com/">이공계 최대 취업 커뮤니티 렛유인</a>
+		<a href="https://wise.sookmyung.ac.kr/ko/program">교내 비교과 프로그램</a>
+		<a href="https://github.com/NohHaYoung?tab=repositories">내 Github 주소</a>
+		<a href="https://snowe.sookmyung.ac.kr/bbs5/boards/jobcareer">스노위 취업경력개발</a>
+	</nav>
 	<article>
-		<table align="center">
+		<img src="https://www.sookmyung.ac.kr/sites/sookmyungkr/images/sub/contents/ui_symbol_01.png" id="logo">
+		<table align="center" id="con">
 			<tr>
 			<td>
 				<ol>
@@ -34,14 +49,10 @@
 							<li><a href="http://snoway.sookmyung.ac.kr/site/program/selfint/form?menuid=001004005002" target="blank">스노웨이에서 자기소개서 작성하기</a></li>
 						</ul><br>
 					</section>
-					<section>
-					<li><a href="site.html">취업 정보 사이트</a></li>
-					</section>
 					</ol>
 				</td>
 			</tr>
 		</table>
 	</article>
-	</nav>
 	</body>
 </html>
