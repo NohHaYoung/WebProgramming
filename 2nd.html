@@ -6,11 +6,10 @@
 		<style type="text/css">
 			h1 {font-style:bold; text-align:center;}
 			#electro {width : 100px; height: 100px;}
-			#line {width:800px;}
+			#line {width:850px;}
 			#Category {width:100px; text-align: center; }
-			#data {width:300px; text-align:left;}
 			#index {width:120px; text-align:center;}
-			td {width:450px;}
+			#data {width:450px;}
 			th {font-style:bold; font-size:15pt; height: 10px; background-color:skyblue;}
 		</style>
 	</head>
@@ -21,21 +20,116 @@
 		<table align="center" border="1" cellspacing="0" cellpadding="0">
 			<thead>
 				<tr>
-					<th colspan="3">주요활동 및 사회경험</td>
+					<th colspan="2">교내/외 동아리 활동</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td rowspan="4" id="Category">활동사항</td><td id="index">활동명</td><td><input type="text" width="100"></td>
+					<td id="index">동아리명</td><td id="data"><input type="text" width="100"></td>
 				</tr>
 				<tr>
-					<td id="index">기관/장소</td><td><input type="text"></td>
+					<td id="index">활동기간</td><td id="data"><input type="date" min="2018-03-02" max="2022-01-01">~<input type="date" min="2018-03-02" max="2022-01-01"></td>
 				</tr>
 				<tr>
-					<td id="index">활동기간</td><td><input type="date" min="2018-03-02" max="2022-01-01">~<input type="date" min="2018-03-02" max="2022-01-01"></td>
+					<td id="index">활동내용</td><td id="data"><textarea name="content" cols="80" rows="5"></textarea></td>
 				</tr>
 				<tr>
-					<td id="index">활동내용</td><td><textarea name="content" cols="50" rows="5"></textarea>
+					<td id="index">동아리명</td><td id="data"><input type="text" width="100"></td>
+				</tr>
+				<tr>
+					<td id="index">활동기간</td><td id="data"><input type="date" min="2018-03-02" max="2022-01-01">~<input type="date" min="2018-03-02" max="2022-01-01"></td>
+				</tr>
+				<tr>
+					<td id="index">활동내용</td><td id="data"><textarea name="content" cols="80" rows="5"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+		<br><br>
+		<table align="center" border="1" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<th colspan="5">자격증 및 외국어 능력</th>
+				</tr>
+				<tr>
+					<td id="index">자격(면허)증명</td><td id="index">발행처/발행기관</td><td id="index">등록번호</td><td id="index">취득일</td><td align="center">점수(등급)</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align="center"><input type="text" size="15"></td>
+					<td align="center"><input type="text" size="20"></td>
+					<td align="center"><input type="text" size="15"></td>
+					<td align="center"><input type="date" max="2021-12-31"></td>
+					<td width="10" align="center"><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="text" size="15"></td>
+					<td align="center"><input type="text" size="20"></td>
+					<td align="center"><input type="text" size="15"></td>
+					<td align="center"><input type="date" max="2021-12-31"></td>
+					<td width="10" align="center"><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="text" size="15"></td>
+					<td align="center"><input type="text" size="20"></td>
+					<td align="center"><input type="text" size="15"></td>
+					<td align="center"><input type="date" max="2021-12-31"></td>
+					<td width="10" align="center"><input type="text" size="10"></td>
+				</tr>
+			</tbody>
+		</table><br><br>
+		<table align="center" border="1" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<th colspan="5">직무 관련 전공/비교과프로그램 이수 내역</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="4" id="Category">활동사항</td>
+					<td id="index">활동명</td>
+					<td colspan="3"><input type="text" width="100"></td>
+				</tr>
+				<tr>
+					<td id="index">기관/장소</td>
+					<td><input type="text"></td>
+					<td id="index">분류</td>
+					<td align="center"><select name="type" size="1">
+						<option value="major">전공</option>
+						<option value="seminar">교내 비교과 프로그램</option>
+						<option value="seminar">교외 프로그램</option>
+					</select>
+				</tr>
+				<tr>
+					<td id="index">활동기간</td>
+					<td colspan="3"><input type="date" min="2018-03-02" max="2022-01-01">~<input type="date" min="2018-03-02" max="2022-01-01"></td>
+				</tr>
+				<tr>
+					<td id="index">활동내용</td>
+					<td colspan="3"><textarea name="content" cols="65" rows="5"></textarea></td>
+				</tr>
+				<tr>
+					<td rowspan="4" id="Category">활동사항</td>
+					<td id="index">활동명</td>
+					<td colspan="3"><input type="text" width="100"></td>
+				</tr>
+				<tr>
+					<td id="index">기관/장소</td>
+					<td><input type="text"></td>
+					<td id="index">분류</td>
+					<td align="center"><select name="type" size="1">
+						<option value="major">전공</option>
+						<option value="seminar">교내 비교과 프로그램</option>
+						<option value="seminar">교외 프로그램</option>
+					</select>
+				</tr>
+				<tr>
+					<td id="index">활동기간</td>
+					<td colspan="3"><input type="date" min="2018-03-02" max="2022-01-01">~<input type="date" min="2018-03-02" max="2022-01-01"></td>
+				</tr>
+				<tr>
+					<td id="index">활동내용</td>
+					<td colspan="3"><textarea name="content" cols="65" rows="5"></textarea></td>
 				</tr>
 			</tbody>
 		</table>
